@@ -10,7 +10,7 @@ Personal portfolio website showcasing my skills, projects, and experience as a F
 **Title:** Full Stack Developer | React.js • Node.js • Web3 • Blockchain • AI/ML | UI/UX Wizard  
 **Location:** Punjab, Pakistan  
 **Email:** mudasarmd09@gmail.com  
-**Phone:** +923124353320  
+**Phone:** +923124353320
 
 ### Professional Summary
 
@@ -72,7 +72,7 @@ This portfolio is built with:
 - **Frontend:** React.js with TypeScript, Tailwind CSS
 - **Backend:** Node.js, Express.js
 - **Database:** PostgreSQL with Drizzle ORM
-- **Deployment:** Replit Platform
+- **Deployment:** Flexible Hosting Services
 
 ## Getting Started
 
