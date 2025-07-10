@@ -4,6 +4,7 @@ import { setupVite, log } from "./vite";
 import path from "path";
 import { fileURLToPath } from "url";
 
+// Fix for production build compatibility
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -58,11 +59,12 @@ app.use((req, res, next) => {
   if (isDev) {
     await setupVite(app, server);
   } else {
-    const publicPath = path.join(__dirname, "../dist/public");
+    // Use __dirname for production compatibility
+    const publicPath = path.resolve(__dirname, "../dist/public");
     app.use(express.static(publicPath));
 
     app.get("*", (_req, res) => {
-      res.sendFile(path.join(publicPath, "index.html"));
+      res.sendFile(path.resolve(publicPath, "index.html"));
     });
   }
 
