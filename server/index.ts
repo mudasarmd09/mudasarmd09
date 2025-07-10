@@ -67,7 +67,9 @@ app.use((req, res, next) => {
   }
 
   const port = process.env.PORT || 5000;
-  server.listen(port, "0.0.0.0", () => {
-    log(`serving on port ${port}`);
+  const host = process.env.NODE_ENV === 'production' ? '0.0.0.0' : 'localhost';
+
+  app.listen(port, host, () => {
+    console.log(`[express] serving on ${host}:${port}`);
   });
 })();
