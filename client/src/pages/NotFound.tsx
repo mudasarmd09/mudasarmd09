@@ -6,15 +6,20 @@ import { Home, ArrowLeft } from "lucide-react";
 
 const NotFound = () => {
   const [location] = useLocation();
+  
+  // Valid routes that should show the main portfolio
+  const validRoutes = ["/", "/home", "/index"];
+  
+  // Don't render anything if we're on a valid route
+  if (validRoutes.includes(location)) {
+    return null;
+  }
 
   useEffect(() => {
-    // Only log 404 for actual non-existent routes, not the home route
-    if (location !== "/" && location !== "/home" && location !== "/index") {
-      console.error(
-        "404 Error: User attempted to access non-existent route:",
-        location
-      );
-    }
+    console.error(
+      "404 Error: User attempted to access non-existent route:",
+      location
+    );
   }, [location]);
 
   return (
