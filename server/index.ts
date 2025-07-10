@@ -4,7 +4,7 @@ import { setupVite, log } from "./vite";
 import path from "path";
 import { fileURLToPath } from "url";
 
-// ✅ Define __dirname for ES Modules (local dev me kaam aata hai)
+// ✅ Define __dirname for ES Modules (safe for dev & production)
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 // ✅ Logging middleware
 app.use((req, res, next) => {
   const start = Date.now();
-  const path = req.path;
+  const pathReq = req.path;
   let capturedJsonResponse: Record<string, any> | undefined = undefined;
 
   const originalResJson = res.json;
@@ -26,8 +26,8 @@ app.use((req, res, next) => {
 
   res.on("finish", () => {
     const duration = Date.now() - start;
-    if (path.startsWith("/api")) {
-      let logLine = `${req.method} ${path} ${res.statusCode} in ${duration}ms`;
+    if (pathReq.startsWith("/api")) {
+      let logLine = `${req.method} ${pathReq} ${res.statusCode} in ${duration}ms`;
       if (capturedJsonResponse) {
         logLine += ` :: ${JSON.stringify(capturedJsonResponse)}`;
       }
@@ -68,7 +68,8 @@ app.use((req, res, next) => {
     await setupVite(app, server);
   } else {
     // ✅ Production: Serve static build
-    const publicPath = path.resolve(process.cwd(), "dist/public");
+    // 🚀 Yeh wala public path production me safe hai:
+   const publicPath = path.resolve(process.cwd(), "dist/public");
     app.use(express.static(publicPath));
 
     // ✅ Fallback route for SPA
