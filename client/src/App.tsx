@@ -21,7 +21,7 @@ const App = () => (
           <Route path="/" component={Index} />
           <Route path="/home" component={Index} />
           <Route path="/index" component={Index} />
-          <Route component={NotFound} />
+          <Route path="*" component={NotFound} />
         </Router>
       </TooltipProvider>
     </ThemeProvider>
