@@ -7,6 +7,7 @@ import { Route, Router } from "wouter";
 import { ThemeProvider } from "./components/ThemeProvider";
 
 import Index from "./pages/Index";
+import SimpleIndex from "./pages/SimpleIndex";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -18,10 +19,11 @@ const App = () => (
         <Toaster />
         <Sonner />
         <Router>
-          <Route path="/" component={Index} />
+          <Route path="/" component={SimpleIndex} />
           <Route path="/home" component={Index} />
           <Route path="/index" component={Index} />
-          <Route component={NotFound} />
+          <Route path="/full" component={Index} />
+          <Route path="*" component={NotFound} />
         </Router>
       </TooltipProvider>
     </ThemeProvider>

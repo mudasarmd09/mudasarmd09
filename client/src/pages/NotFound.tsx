@@ -5,6 +5,7 @@ const NotFound = () => {
   const [location] = useLocation();
 
   useEffect(() => {
+    console.log("NotFound component mounted. Current location:", location);
     // Only log 404 for actual non-existent routes, not the home route
     if (location !== "/") {
       console.error(
