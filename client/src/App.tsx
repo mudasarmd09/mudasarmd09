@@ -1,11 +1,11 @@
 
 import { Route, Router } from "wouter";
-import SimpleIndex from "./pages/SimpleIndex";
+import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
 const App = () => (
   <Router>
-    <Route path="/" component={SimpleIndex} />
+    <Route path="/" component={Index} />
     <Route path="*" component={NotFound} />
   </Router>
 );
