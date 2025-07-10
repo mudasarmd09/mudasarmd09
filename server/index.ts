@@ -4,7 +4,7 @@ import { setupVite, log } from "./vite";
 import path from "path";
 import { fileURLToPath } from "url";
 
-// ✅ Define __dirname for ES Modules
+// ✅ Define __dirname for ES Modules (local dev me kaam aata hai)
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -68,7 +68,7 @@ app.use((req, res, next) => {
     await setupVite(app, server);
   } else {
     // ✅ Production: Serve static build
-    const publicPath = path.resolve(__dirname, "public");
+    const publicPath = path.resolve(process.cwd(), "dist/public");
     app.use(express.static(publicPath));
 
     // ✅ Fallback route for SPA
