@@ -47,8 +47,10 @@ app.use((req, res, next) => {
     throw err;
   });
 
-  // FORCE PRODUCTION ENVIRONMENT
-  app.set("env", "production");
+  // Use NODE_ENV to determine environment
+  if (process.env.NODE_ENV === "development") {
+    app.set("env", "development");
+  }
 
   console.log("NODE_ENV:", process.env.NODE_ENV);
   console.log("App Env:", app.get("env"));
