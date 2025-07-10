@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Route, Router } from "wouter";
+import { Route, Router, Switch } from "wouter";
 import { ThemeProvider } from "./components/ThemeProvider";
 
 import Index from "./pages/Index";
@@ -18,10 +18,12 @@ const App = () => (
         <Toaster />
         <Sonner />
         <Router>
-          <Route path="/" component={Index} />
-          <Route path="/home" component={Index} />
-          <Route path="/index" component={Index} />
-          <Route path="*" component={NotFound} />
+          <Switch>
+            <Route path="/" component={Index} />
+            <Route path="/home" component={Index} />
+            <Route path="/index" component={Index} />
+            <Route component={NotFound} />
+          </Switch>
         </Router>
       </TooltipProvider>
     </ThemeProvider>

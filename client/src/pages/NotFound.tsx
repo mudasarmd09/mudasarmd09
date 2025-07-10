@@ -6,14 +6,6 @@ import { Home, ArrowLeft } from "lucide-react";
 
 const NotFound = () => {
   const [location] = useLocation();
-  
-  // Valid routes that should show the main portfolio
-  const validRoutes = ["/", "/home", "/index"];
-  
-  // Don't render anything if we're on a valid route
-  if (validRoutes.includes(location)) {
-    return null;
-  }
 
   useEffect(() => {
     console.error(
