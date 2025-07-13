@@ -1,0 +1,101 @@
+You are an expert AI developer and code editor. I am providing you my complete personal information below. Your job is that I have connected you with my repository, and you must update it based on the details given below.
+
+Here are my personal details, which you must use to replace all the old details everywhere (README files, meta tags, site content, and config files) so that it is clearly visible on the website that I am the owner and creator:
+
+─────────────────────────────
+✅ MY PERSONAL DETAILS:
+
+Name: Mudasar MD
+
+Title: Full Stack Developer | React.js • Node.js • Web3 • Blockchain • AI/ML | UI/UX Wizard
+
+About Section:
+Problem Solver by Nature | Full Stack Developer by Practice | Tech Collaborator by Choice
+
+Over the past year, I have worked closely with designers, developers, and AI experts to turn many ideas into real products — whether that meant building modern Web3 dashboards, mobile-first platforms, or integrating OpenAI into smart business tools.
+
+My primary stack revolves around React.js, Node.js, MongoDB, and PostgreSQL. Additionally, I have been learning blockchain technologies in depth, such as Solidity, Web3.js, and NFT smart contracts. When needed, I also integrate AI tools (Python, OpenAI APIs) to make apps smarter and better.
+
+What truly drives me is solving real problems with code — from intuitive UI/UX designs to scalable backend logic. Every project is an opportunity for me to explore, refine, and deliver.
+
+Skills:
+▪️ React.js
+▪️ Node.js
+▪️ MongoDB
+▪️ PostgreSQL
+▪️ Solidity
+▪️ Web3.js
+▪️ Ethers.js
+▪️ Tailwind
+▪️ Figma
+▪️ AI/ML Tools (OpenAI)
+
+Experience:
+Freelancer Full Stack Developer & Tech Consultant
+(Jan 2024 – Present)
+
+Developed full-stack applications using React.js, Node.js, and MongoDB
+
+Built cross-platform apps with Flutter and React Native
+
+Integrated AI tools and chatbots using OpenAI APIs
+
+Developed smart contracts with Solidity and Web3.js
+
+Contact:
+Email: mudasarmd09@gmail.com
+Phone: +923124353320
+Location: Punjab, Pakistan
+
+Social Links:
+LinkedIn: https://linkedin.com/in/mudasar-md-6921b235a
+GitHub: https://github.com/mudasarmd09
+
+─────────────────────────────
+✅ ACTION INSTRUCTIONS:
+
+Connect to the GitHub repository inspired by the website https://saifu.me.
+
+Replace all default names, emails, phone numbers, and profile details with my above personal information in:
+
+Home page sections
+
+About section
+
+Skills section
+
+Experience section
+
+Contact section
+
+README.md and all documentation files
+
+SEO metadata and Open Graph tags
+
+Footer credits and any author mentions
+
+Update the design and content so that my specialization is clearly highlighted in:
+
+React.js
+
+Node.js
+
+Web3 development
+
+Blockchain
+
+AI/ML integrations
+
+Modern UI/UX
+
+For now, keep the project showcases, animations, and layouts the same as the original repository.
+
+Ensure that the final site is mobile-friendly and fully responsive.
+
+Make sure the website clearly looks like my personal professional portfolio.
+
+Verify that all links, icons, and text match my information above.
+
+─────────────────────────────
+
+Once all replacements and updates are complete, confirm and share which files you edited and what changes were made in them.

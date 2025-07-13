@@ -1,0 +1,12 @@
+Remove any references from code and content
+✨ Instructions for Portfolio Agent:
+
+Please review and clean all code files to ensure professional branding consistency throughout the Mudasar MD portfolio project.
+
+Focus areas:
+- Remove any legacy platform mentions
+- Ensure consistent professional branding
+- Maintain code functionality and design integrity
+- Update any outdated references to current standards
+
+Goal: Create a clean, professional portfolio codebase with consistent Mudasar MD branding.

@@ -1,0 +1,57 @@
+You are an expert React.js developer. I need you to enhance my existing ScrollToTop component with the following professional features:
+
+## 🎯 Requirements:
+
+### 1. Circular Progress Ring
+- Add a circular progress border around the scroll-to-top button
+- The progress ring should fill clockwise as user scrolls down the page
+- Progress should be based on scroll percentage (0% at top, 100% at bottom)
+- Ring should empty/reverse as user scrolls back up
+
+### 2. Professional Design
+- Use gradient colors that match the portfolio theme (blue/purple/cyan)
+- Smooth animations and transitions
+- Modern glass morphism effect
+- Proper hover and active states
+- Responsive design for mobile devices
+
+### 3. Technical Specifications
+- Calculate scroll percentage accurately: (scrollTop / (scrollHeight - clientHeight)) * 100
+- Use SVG for the circular progress ring for crisp quality
+- Implement smooth color transitions
+- Add proper ARIA labels for accessibility
+- Ensure 60fps animations using CSS transforms
+
+### 4. Color Scheme
+- Progress ring: Gradient from portfolio-blue to portfolio-purple to portfolio-cyan
+- Background: Semi-transparent with backdrop blur
+- Hover effect: Scale up with glow effect
+- Icon: Clean up arrow icon with smooth animation
+
+### 5. Animation Details
+- Progress ring should animate smoothly with scroll
+- Button should have subtle bounce animation on hover
+- Icon should have pulse effect when button is active
+- Entrance animation when button becomes visible
+
+### 6. Position and Behavior
+- Fixed position: bottom-8 right-8
+- Show only when scrolled more than 300px from top
+- Hide when reaching footer section
+- Z-index should be high enough to stay above other elements
+
+## 📋 Implementation:
+- Update the existing ScrollToTop component in `client/src/components/ScrollToTop.tsx`
+- Add smooth scroll behavior to top
+- Use modern React hooks (useState, useEffect)
+- Implement proper cleanup for event listeners
+- Add TypeScript types for better code quality
+
+## 🎨 Design Requirements:
+- 56px x 56px button size (14rem)
+- 4px progress ring thickness
+- Professional box shadow
+- Smooth transitions (duration: 300ms)
+- Match existing portfolio design language
+
+Please provide the complete updated ScrollToTop.tsx component with all these features implemented professionally. Make sure the code is clean, well-commented, and follows React best practices.

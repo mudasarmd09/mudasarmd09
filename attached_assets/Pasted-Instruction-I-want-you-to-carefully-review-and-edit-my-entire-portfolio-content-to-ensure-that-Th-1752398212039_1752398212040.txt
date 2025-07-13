@@ -1,0 +1,22 @@
+✨ Instructions for Portfolio Agent:
+
+Please carefully review and edit my entire portfolio content to ensure that:
+
+1. All references to legacy development platforms are removed from code comments, variable names, project files (e.g., README.md, PROJECT.md, package.json) or any metadata in the repository files.
+
+2. Where appropriate, replace with Mudasar MD branding only if it makes sense. For example:
+   - If a comment says "Platform Assistant generated this file," change to "Generated for Mudasar MD Portfolio."
+   - If it's unnecessary, simply remove the mention.
+
+3. Do NOT modify design, styling, or functional code unless a legacy reference is embedded within.
+
+4. Do NOT touch personal data or portfolio content—only branding references.
+
+5. Make sure no new or leftover legacy references remain in any file or config.
+
+Important:
+This request does NOT include rewriting Git commit history. You will only clean code files and metadata in the repository content.
+
+Extra Notes for Clarity:
+- After you complete these changes, provide a short report of which files were updated.
+- If you find any references you cannot safely remove, comment them clearly in the code for me to handle manually.
