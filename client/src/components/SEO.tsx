@@ -136,7 +136,7 @@ export function SEO({ metadata }: SEOProps) {
       structuredDataScript.textContent = JSON.stringify(structuredData);
     } else {
       structuredDataScript = document.createElement('script');
-      structuredDataScript.type = 'application/ld+json';
+      (structuredDataScript as HTMLScriptElement).type = 'application/ld+json';
       structuredDataScript.textContent = JSON.stringify(structuredData);
       document.head.appendChild(structuredDataScript);
     }

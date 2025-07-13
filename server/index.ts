@@ -52,9 +52,6 @@ app.use((req, res, next) => {
   const isDev = process.env.NODE_ENV === "development";
   app.set("env", isDev ? "development" : "production");
 
-  console.log("NODE_ENV:", process.env.NODE_ENV);
-  console.log("App Env:", app.get("env"));
-
   if (isDev) {
     await setupVite(app, server);
   } else {
@@ -67,7 +64,7 @@ app.use((req, res, next) => {
   }
 
   const port = process.env.PORT || 5000;
-  server.listen(port, "0.0.0.0", () => {
+  server.listen(Number(port), "0.0.0.0", () => {
     log(`serving on port ${port}`);
   });
 })();
